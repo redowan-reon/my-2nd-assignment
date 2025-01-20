@@ -441,4 +441,14 @@ text-align: center;
     .story-cards-small {
         grid-template-columns: repeat(2,1fr);
     }
+    .date-button {
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
 }
