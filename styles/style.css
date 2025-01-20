@@ -287,7 +287,7 @@ text-align: center;
 /* our stories */
 /* Our Stories Section */
 .our-stories {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('path-to-background-image.jpg');
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     background-size: cover;
     background-position: center;
     color: white;
@@ -295,6 +295,7 @@ text-align: center;
 }
 
 .our-stories h1 {
+    color: black;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -345,12 +346,12 @@ text-align: center;
     display: block;
 }
 
+
 /* Date button styles */
 .date-button {
     position: absolute;
     top: 200px;
     left: 20px;
-    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
@@ -369,24 +370,26 @@ text-align: center;
     color: #555;
 }
 
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-    .stories-layout {
-        flex-direction: column;
-    }
+.our-storie {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: rgb(17, 17, 17); 
+    border: none;
+    border-radius: 12px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    .story-card-large {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .story-cards-small {
-        grid-template-columns: 1fr;
-    }
+.our-storie:hover {
+    background: rgb(40, 40, 40); /* Slightly lighter on hover */
 }
 
 
 
+/* Responsiveness */
 @media screen and (max-width: 768px) {
     .nav {
         display: none;
@@ -425,5 +428,17 @@ text-align: center;
     }
     .arrow-buttons{
         display: none;
+    }
+    /* our story */
+    .stories-layout {
+        flex-direction: column;
+    }
+
+    .story-card-large {
+        display: none;
+    }
+
+    .story-cards-small {
+        grid-template-columns: repeat(2,1fr);
     }
 }
