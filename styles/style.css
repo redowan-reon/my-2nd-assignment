@@ -387,6 +387,78 @@ text-align: center;
     background: rgb(40, 40, 40); /* Slightly lighter on hover */
 }
 
+/* footer */
+/* General Styles */
+footer {
+    background-color: rgb(1, 172, 253);;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footers > div {
+    flex: 1;
+    margin: 15px;
+}
+
+.education img {
+    max-width: 100px;
+}
+
+.education h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color:white;
+}
+
+.education p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color:white;
+}
+
+.about h2,
+.keep h3 {
+    margin-bottom: 10px;
+    color:white;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 0.9em;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.about ul li a:hover {
+    color: #228ec8;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
 
 
 /* Responsiveness */
@@ -450,5 +522,22 @@ text-align: center;
         border-radius: 5px;
         padding: 5px 10px;
         font-size: 0.9rem;
+    }
+    /* footer */
+    .footers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footers > div {
+        margin: 15px 0;
+    }
+
+    .education h1 {
+        font-size: 1.2em;
+    }
+
+    .social-icons img {
+        width: 25px;
     }
 }
