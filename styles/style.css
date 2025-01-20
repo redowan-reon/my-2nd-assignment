@@ -265,7 +265,7 @@ text-align: center;
 .arrow-buttons {
     display: flex;
     justify-content: center;
-    
+    gap: 10px;
     margin-top: 40px;
 }
 
@@ -283,6 +283,108 @@ text-align: center;
 .arrow-buttons button:hover {
     background-color: #0056b3;
 }
+
+/* our stories */
+/* Our Stories Section */
+.our-stories {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('path-to-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.our-stories h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.stories-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Larger story card on the left */
+.story-card-large {
+    flex: 1;
+    max-width: 540.27px;
+    height: 630.52px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+/* Smaller cards container */
+.story-cards-small {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Image styles */
+.story-card img, .story-card-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Date button styles */
+.date-button {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.story-card h2, .story-card-large h2 {
+    font-size: 1.2rem;
+    margin: 15px;
+}
+
+.story-card p, .story-card-large p {
+    font-size: 0.9rem;
+    margin: 15px;
+    color: #555;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .stories-layout {
+        flex-direction: column;
+    }
+
+    .story-card-large {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .story-cards-small {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 @media screen and (max-width: 768px) {
